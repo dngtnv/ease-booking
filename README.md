@@ -1,7 +1,5 @@
 # Hotel Booking System
 
-# Hotel Booking System
-
 This project is a full-stack hotel booking system with separate admin and client interfaces. The admin interface allows hotel administrators to manage hotels, rooms, and transactions, while the client interface allows users to search for hotels, view details, and make bookings.
 
 ## Technologies Used
