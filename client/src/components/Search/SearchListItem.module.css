@@ -1,0 +1,108 @@
+.cardItem {
+  min-width: 500px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid rgb(156, 156, 156);
+  margin-bottom: 16px;
+}
+
+.cardContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.cardImg {
+  width: 200px;
+  height: 210px;
+  object-fit: cover;
+}
+
+.cardDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 500;
+  flex-grow: 2;
+}
+
+.cardDetail > *:not(:first-child) {
+  font-size: 14px;
+}
+
+.cardDetail h3 {
+  color: #0371c2;
+  font-weight: bold;
+  font-size: 20px;
+  text-wrap: wrap;
+}
+
+.cardDetail .tag {
+  color: #fff;
+  padding: 4px;
+  background-color: #008009;
+  border-radius: 6px;
+  width: fit-content;
+  font-weight: 400;
+  text-wrap: nowrap;
+}
+
+.cardDetail .description {
+  font-weight: bold;
+}
+
+.cardDetail .cancel {
+  color: #008009;
+}
+
+.cardDetail .cancel p:first-child {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardRight .cardRightTop {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  align-items: center;
+}
+
+.cardRight .cardRightTop .rateNumber {
+  color: #fff;
+  padding: 4px;
+  background-color: #003580;
+}
+
+.cardRight .cardRightBottom {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.cardRightBottom span {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.cardRightBottom p {
+  font-size: 12px;
+  color: #969696;
+  margin-bottom: 5px;
+}
+
+.cardRightBottom .btn {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  background-color: #0071c2;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 14px;
+  text-wrap: nowrap;
+}

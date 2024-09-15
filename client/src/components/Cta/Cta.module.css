@@ -1,0 +1,40 @@
+#ctaWrapper {
+  background-color: #003580;
+  padding: 48px 0;
+  color: #fff;
+}
+
+.ctaMain {
+  margin: 0 auto;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.ctaMain .ctaTitle {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.ctaForm input {
+  background-color: #fff;
+  padding: 15px 12px;
+  color: #3d3d3d;
+  border-radius: 5px;
+  width: 300px;
+  border: none;
+  margin-right: 12px;
+  font-size: 1rem;
+}
+
+.ctaForm input:focus {
+  outline: 2px solid #febb02;
+}
+
+.ctaForm button {
+  padding: 15px 5px;
+  background-color: #0071c2;
+  border-radius: 5px;
+}

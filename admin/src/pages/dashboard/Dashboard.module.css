@@ -1,0 +1,25 @@
+#dashboard-wrapper {
+  --sidebar-width: 250px;
+  margin-left: var(--sidebar-width);
+  padding: 1rem;
+}
+
+.booked,
+.checkin,
+.checkout {
+  padding: 5px;
+  border-radius: 4px;
+  color: rgb(26, 133, 12);
+}
+
+.booked {
+  background-color: #f69685;
+}
+
+.checkin {
+  background-color: #39d139;
+}
+
+.checkout {
+  background-color: #dedaf6;
+}

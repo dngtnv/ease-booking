@@ -1,0 +1,92 @@
+#detailWrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  padding: 1.5rem 5rem;
+  color: #000;
+}
+
+.detailInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detailHeaderLeft .addressGroup {
+  margin-top: 10px;
+}
+
+.addressGroup span {
+  margin-left: 10px;
+}
+
+.distance {
+  color: #0071c2;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.price {
+  color: #338e38;
+  font-weight: 600;
+}
+
+.detailPhotos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin: 16px 0;
+}
+
+.detailFooter {
+  display: flex;
+  gap: 10px;
+}
+
+.detailFooterDescription {
+  flex-basis: 70%;
+}
+
+.detailFooterDescription p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.detailAction {
+  flex: 1;
+  background-color: #ebf3ff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detailAction p:first-child {
+  color: #5b5555;
+  font-weight: bold;
+}
+
+.detailAction p:nth-child(2) {
+  font-size: 14px;
+}
+
+.nightPrice span {
+  color: #000;
+  font-weight: bold;
+}
+
+.nightPrice {
+  color: #5b5555;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.btn {
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 16px;
+  background-color: #0071c2;
+  border-radius: 6px;
+  text-align: center;
+}

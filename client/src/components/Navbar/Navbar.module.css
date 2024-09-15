@@ -1,0 +1,31 @@
+#navbar {
+  width: 100%;
+  background-color: #003580;
+  color: #fff;
+}
+
+.navbarWrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  padding: 1.25rem 5rem;
+}
+
+#navList {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin: 20px 0;
+}
+
+@media (max-width: 1024px) {
+  #navList {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navList {
+    display: none;
+  }
+}

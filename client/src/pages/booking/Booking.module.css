@@ -1,0 +1,234 @@
+#bookingWrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  padding: 3rem 5rem;
+  color: #000;
+}
+
+.detailFooter {
+  display: flex;
+  gap: 10px;
+}
+
+.detailFooterDescription {
+  flex-basis: 70%;
+  height: 250px;
+}
+
+.detailFooterDescription p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.detailAction {
+  flex: 1;
+  background-color: #ebf3ff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detailAction p:first-child {
+  color: #5b5555;
+  font-weight: bold;
+}
+
+.detailAction p:nth-child(2) {
+  font-size: 14px;
+}
+
+.nightPrice span {
+  color: #000;
+  font-weight: bold;
+}
+
+.nightPrice {
+  color: #5b5555;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.btn {
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 16px;
+  background-color: #0071c2;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.bookingInputs {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.datesInput {
+  flex-shrink: 0;
+}
+
+.datesInput h2 {
+  margin-bottom: 1rem;
+}
+
+.reserveInfo {
+  flex-grow: 1;
+}
+
+.bookingForm {
+  width: 100%;
+}
+
+.bookingForm .form-control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 0.825rem;
+}
+
+.bookingForm .form-control input {
+  padding: 12px;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  color: #000;
+  font-size: 1rem;
+}
+
+.form-control label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.select-rooms {
+  margin-top: 1rem;
+}
+
+.select-rooms h2 {
+  margin-bottom: 1rem;
+}
+
+.room-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.room-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  flex-basis: 40%;
+}
+
+.room-info small {
+  font-weight: 600;
+}
+
+.room-info span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.room-info .price {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.room-checkboxes {
+  display: flex;
+  gap: 1rem;
+}
+
+.room-checkboxes .form-control {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.room-checkboxes .form-control label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #717171;
+  margin: 5px 0;
+}
+
+.booking-bills {
+  margin: 1.25rem 0;
+}
+
+.booking-bills p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.booking-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5rem;
+  align-items: center;
+}
+
+.booking-actions select {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #d1d1d1;
+  width: 300px;
+  font-size: 1rem;
+}
+
+.booking-actions select:focus {
+  outline: none;
+}
+
+.booking-actions .btn {
+  padding: 0.8rem 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  #bookingWrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  .detailFooter {
+    flex-direction: column;
+  }
+
+  .bookingInputs {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .bookingInputs .datesInput {
+    margin-bottom: 1rem;
+  }
+
+  .room-item {
+    flex-basis: 100%;
+  }
+
+  .room-checkboxes {
+    flex-direction: column;
+  }
+
+  .room-checkboxes .form-control {
+    width: 100%;
+  }
+
+  .booking-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .booking-actions select {
+    width: 100%;
+  }
+}

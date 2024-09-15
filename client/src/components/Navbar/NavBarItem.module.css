@@ -1,0 +1,17 @@
+.navLink {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1.2px solid transparent;
+  display: flex;
+  align-items: center;
+}
+
+.navLink i {
+  margin-right: 10px;
+}
+
+.navLink:hover,
+.active {
+  border: 1.2px solid #fff;
+  border-radius: 22px;
+}

@@ -1,0 +1,193 @@
+section {
+  width: 100%;
+  position: relative;
+}
+
+.headerWrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  padding: 1.25rem 5rem;
+  color: #fff;
+}
+
+.intro h1,
+.intro p {
+  margin-bottom: 18px;
+}
+
+.intro button {
+  background-color: #0071c2;
+  padding: 0.6em 0.8em;
+}
+
+.searchInput {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 3px solid #febb02;
+  border-radius: 4px;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(50px);
+  z-index: 99;
+}
+
+.searchInputs {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+.inputGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.searchInput i {
+  color: #b7b7b7;
+  margin-right: 10px;
+}
+
+.searchInput .heroSearchText {
+  border: none;
+  background-color: #fff;
+  color: #a3a3a3;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 230px;
+  cursor: pointer;
+}
+
+.searchInput input {
+  color: #3d3d3d;
+}
+
+.searchInput select {
+  color: #3d3d3d;
+  background-color: #fff;
+  border: none;
+}
+
+.searchInput select:focus {
+  outline: none;
+}
+
+.searchInput input:focus {
+  outline: none;
+}
+
+.searchBtn {
+  padding: 8px 12px;
+  background-color: #0071c2;
+  border-radius: 4px;
+}
+
+.dateRange {
+  position: relative;
+}
+
+.date {
+  position: absolute;
+  top: 275px;
+  left: 47%;
+  translate: -47%;
+  z-index: 99;
+}
+
+.options {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.optionItem {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  color: #0071c2;
+  cursor: pointer;
+  background-color: white;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+  .headerWrapper {
+    padding: 1.25rem 1rem;
+  }
+
+  .searchInput {
+    padding: 10px 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .searchInput .heroSearchText {
+    max-width: 150px;
+  }
+
+  .searchInput .heroSearchText {
+    font-size: 0.8rem;
+  }
+
+  .searchInput i {
+    font-size: 1.2rem;
+  }
+
+  .searchInput input {
+    font-size: 0.8rem;
+  }
+
+  .searchBtn {
+    padding: 6px 10px;
+  }
+
+  .date {
+    top: 250px;
+  }
+
+  .options {
+    top: 30px;
+  }
+
+  .optionItem {
+    width: 150px;
+  }
+
+  .optionCounter {
+    font-size: 10px;
+  }
+
+  .optionCounterButton {
+    width: 25px;
+    height: 25px;
+  }
+}

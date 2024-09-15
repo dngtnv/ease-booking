@@ -1,0 +1,54 @@
+#transactionWrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  padding: 3rem 5rem;
+  color: #000;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.transaction-table th {
+  background-color: #32a4c1;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  color: #fff;
+}
+
+.transaction-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.transaction-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.transaction-table tr:hover {
+  background-color: #f2f2f2;
+}
+
+.transaction-table .booked,
+.transaction-table .checkin,
+.transaction-table .checkout {
+  padding: 5px;
+  border-radius: 4px;
+  color: rgb(26, 133, 12);
+}
+
+.transaction-table .booked {
+  background-color: #f69685;
+}
+
+.transaction-table .checkin {
+  background-color: #39d139;
+}
+
+.transaction-table .checkout {
+  background-color: #dedaf6;
+}

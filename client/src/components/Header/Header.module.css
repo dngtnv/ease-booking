@@ -1,0 +1,47 @@
+header {
+  width: 100%;
+  background-color: #003580;
+}
+
+.headerWrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  padding: 1.25rem 5rem;
+}
+
+.navbarTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbarTop .logo {
+  cursor: pointer;
+}
+
+.logo a {
+  color: #fff;
+}
+
+.logo a:hover {
+  color: #fff;
+}
+
+.comboBtn {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.comboBtn span {
+  color: #fff;
+}
+
+.btn {
+  background-color: #fff;
+  color: #003580;
+  border-radius: 8px;
+  padding: 0.4em 1em;
+}

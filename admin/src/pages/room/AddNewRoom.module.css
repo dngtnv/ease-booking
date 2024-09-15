@@ -1,0 +1,79 @@
+#addnew-wrapper {
+  --sidebar-width: 250px;
+  margin-left: var(--sidebar-width);
+  padding: 1rem;
+}
+
+#addnew-wrapper h1 {
+  font-size: 1.2rem;
+  color: rgb(183, 183, 183);
+  padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 3px;
+}
+
+.form-wrapper {
+  font-size: 1rem;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 3px;
+}
+
+.form-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-left,
+.form-right {
+  flex-basis: 40%;
+}
+
+.form-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.form-control label {
+  margin-bottom: 0.5rem;
+}
+
+.form-control input,
+.form-control select {
+  padding: 0.5rem;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #a0a0a0;
+}
+
+.form-control input::placeholder {
+  color: #a5a5a5;
+}
+
+.form-control textarea {
+  padding: 0.5rem;
+}
+
+.form-control select[name='featured'] {
+  width: fit-content;
+}
+
+.btn {
+  padding: 0.5rem 2.5rem;
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 1rem 0;
+}
