@@ -103,17 +103,25 @@ PORT=5000
 
 - `POST /admin/login`: Admin login.
 - `GET /admin/dashboard`: Get dashboard data.
+- `GET /admin/latest-transactions`: Get 8 latest transactions
+- `GET /admin/hotels`: Get all hotels
 - `POST /admin/hotels`: Add a new hotel.
-- `PUT /admin/hotels/:id`: Edit a hotel.
-- `DELETE /admin/hotels/:id`: Delete a hotel.
+- `PUT /admin/hotels/:hotelId`: Edit a hotel.
+- `DELETE /admin/hotels/:hotelId`: Delete a hotel.
+- `GET /admin/rooms`: Get all rooms
 - `POST /admin/rooms`: Add a new room.
-- `PUT /admin/rooms/:id`: Edit a room.
-- `DELETE /admin/rooms/:id`: Delete a room.
-- `GET /admin/transactions`: Get all transactions.
+- `PUT /admin/rooms/:roomId`: Edit a room.
+- `DELETE /admin/rooms/:roomId`: Delete a room.
 
 ### Client Routes
 
-- `GET /api/hotels`: Get all hotels.
+- `GET /api/hotels/city`: Get hotels depend on city.
+- `GET /api/hotels/type`: Get number of hotels depend on type
+- `GET /api/hotels/top`: Get top 3 hotels with the highest rating
 - `GET /api/hotels/:id`: Get hotel details.
-- `POST /api/bookings`: Create a new booking.
-- `GET /api/transactions`: Get user transactions.
+- `GET /api/hotel/hotelId/rooms`: Get available rooms in a hotel
+
+### Transaction Routes
+
+- `POST /api/transaction` : Create a new transaction
+- `GET /api/transactions`: Get all transactions
