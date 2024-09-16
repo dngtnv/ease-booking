@@ -28,7 +28,7 @@ const Room = () => {
   const handleDelete = async () => {
     // Use selectedId for the delete operation
     try {
-      const response = await fetch(`http://localhost:5000/admin/rooms/${selectedId}`, {
+      const response = await fetch(`https://ease-booking.onrender.com/admin/rooms/${selectedId}`, {
         method: 'DELETE',
       });
 

@@ -12,7 +12,7 @@ const Auth = ({ type }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch(`http://localhost:5000/auth/${type}`, {
+    fetch(`https://ease-booking.onrender.com/auth/${type}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

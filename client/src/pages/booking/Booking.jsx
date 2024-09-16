@@ -105,7 +105,7 @@ const Booking = () => {
     }
     // handle request to server
     try {
-      const response = await fetch('http://localhost:5000/api/transaction', {
+      const response = await fetch('https://ease-booking.onrender.com/api/transaction', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -141,7 +141,7 @@ const Booking = () => {
       const fetchRooms = async () => {
         try {
           const response = await fetch(
-            `http://localhost:5000/api/hotel/${hotelDetail._id}/rooms?duration=${format(
+            `https://ease-booking.onrender.com/api/hotel/${hotelDetail._id}/rooms?duration=${format(
               date[0].startDate,
               'MM/dd/yyyy'
             )} to ${format(date[0].endDate, 'MM/dd/yyyy')}`

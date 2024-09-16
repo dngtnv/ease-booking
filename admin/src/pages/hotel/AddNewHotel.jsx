@@ -20,7 +20,7 @@ const AddNewHotel = ({ edit }) => {
 
     console.log(data);
     try {
-      const response = await fetch(`http://localhost:5000/admin/hotels/${edit ? hotelId : ''}`, {
+      const response = await fetch(`https://ease-booking.onrender.com/admin/hotels/${edit ? hotelId : ''}`, {
         method: edit ? 'PUT' : 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ const AddNewHotel = ({ edit }) => {
 
   useEffect(() => {
     if (edit) {
-      fetch(`http://localhost:5000/api/hotel/${hotelId}`)
+      fetch(`https://ease-booking.onrender.com/api/hotel/${hotelId}`)
         .then((response) => response.json())
         .then((data) => setHotel(data));
     }

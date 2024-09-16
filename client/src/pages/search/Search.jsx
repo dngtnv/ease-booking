@@ -22,7 +22,7 @@ const Search = () => {
     setIsLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:5000/api/hotels/search?city=${destination}&duration=${`${format(
+        `https://ease-booking.onrender.com/api/hotels/search?city=${destination}&duration=${`${format(
           date[0].startDate,
           'MM/dd/yyyy'
         )} to ${format(date[0].endDate, 'MM/dd/yyyy')}`}&adult=${options.adult}&children=${options.children}&room=${
