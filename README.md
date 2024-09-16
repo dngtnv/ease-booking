@@ -125,3 +125,7 @@ PORT=5000
 
 - `POST /api/transaction` : Create a new transaction
 - `GET /api/transactions`: Get all transactions
+
+**Demo Link:** [Client](https://ease-booking-client.netlify.app)
+**Demo Link:** [Admin](https://ease-booking-admin.netlify.app)
+**Demo Link:** [Server](https://ease-booking.onrender.com)
