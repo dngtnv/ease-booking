@@ -2,8 +2,8 @@ import { differenceInDays, format } from 'date-fns';
 import { useEffect, useState } from 'react';
 import { DateRange } from 'react-date-range';
 import { useLocation, useNavigate } from 'react-router-dom';
+import Header from '../../components/Header/Header.jsx';
 import Navbar from '../../components/Navbar/Navbar.jsx';
-import Header from '../../components/header/Header.jsx';
 import styles from './Booking.module.css';
 
 const Booking = () => {
