@@ -11,6 +11,8 @@ const transactionRoutes = require('./routes/transaction');
 
 const mongoose = require('mongoose');
 
+const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PW}@cluster0.m8gjdlk.mongodb.net/${process.env.MONGO_DEFAULT_DB}?retryWrites=true&w=majority&appName=Cluster0`;
+
 const app = express();
 
 app.use(cors());
@@ -23,9 +25,7 @@ app.use('/api', hotelRoutes);
 app.use('/api', transactionRoutes);
 
 mongoose
-  .connect(
-    'mongodb+srv://kakalupin:mnlXBK7cZr9c0K0l@cluster0.m8gjdlk.mongodb.net/booking?retryWrites=true&w=majority&appName=Cluster0'
-  )
+  .connect(MONGODB_URI)
   .then(() => {
     app.listen(PORT);
     console.log('Server started');
