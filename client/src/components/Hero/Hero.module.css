@@ -40,6 +40,12 @@ section {
   flex-direction: row;
   gap: 20px;
   width: 100%;
+  @media screen and (max-width: 376px) {
+    flex-direction: column;
+    > * {
+      border-bottom: 1px solid #b7b7b7;
+    }
+  }
 }
 
 .inputGroup {
@@ -189,5 +195,14 @@ section {
   .optionCounterButton {
     width: 25px;
     height: 25px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .date {
+    top: 330px;
+  }
+  .options {
+    top: -20px;
   }
 }

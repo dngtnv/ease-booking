@@ -27,52 +27,54 @@ const Transaction = () => {
       <section id={styles.transactionWrapper}>
         <h1>Your Transactions</h1>
         {/* create a table to display all transactions */}
-        <table className={styles['transaction-table']}>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Hotel</th>
-              <th>Room</th>
-              <th>Date</th>
-              <th>Price</th>
-              <th>Payment Method</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            {loading && (
+        <div style={{ overflowX: 'auto' }}>
+          <table className={styles['transaction-table']}>
+            <thead>
               <tr>
-                <td>Loading...</td>
+                <th>#</th>
+                <th>Hotel</th>
+                <th>Room</th>
+                <th>Date</th>
+                <th>Price</th>
+                <th>Payment Method</th>
+                <th>Status</th>
               </tr>
-            )}
-            {data &&
-              data.map((transaction, index) => (
-                <tr key={transaction._id}>
-                  <td>{index + 1}</td>
-                  <td>{transaction.hotel.name}</td>
-                  <td>{transaction.room.map((room) => room.roomNumbers.join(', ')).join(', ')}</td>
-                  <td>{`${new Date(transaction.dateStart).toLocaleDateString()} - ${new Date(
-                    transaction.dateEnd
-                  ).toLocaleDateString()}`}</td>
-                  <td>${transaction.price}</td>
-                  <td>{transaction.payment}</td>
-                  <td>
-                    <span
-                      className={
-                        transaction.status === 'Booked'
-                          ? styles.booked
-                          : transaction.status === 'Checkin'
-                          ? styles.checkin
-                          : styles.checkout
-                      }
-                    >
-                      {transaction.status}
-                    </span>
-                  </td>
+            </thead>
+            <tbody>
+              {loading && (
+                <tr>
+                  <td>Loading...</td>
                 </tr>
-              ))}
-          </tbody>
-        </table>
+              )}
+              {data &&
+                data.map((transaction, index) => (
+                  <tr key={transaction._id}>
+                    <td>{index + 1}</td>
+                    <td>{transaction.hotel.name}</td>
+                    <td>{transaction.room.map((room) => room.roomNumbers.join(', ')).join(', ')}</td>
+                    <td>{`${new Date(transaction.dateStart).toLocaleDateString()} - ${new Date(
+                      transaction.dateEnd
+                    ).toLocaleDateString()}`}</td>
+                    <td>${transaction.price}</td>
+                    <td>{transaction.payment}</td>
+                    <td>
+                      <span
+                        className={
+                          transaction.status === 'Booked'
+                            ? styles.booked
+                            : transaction.status === 'Checkin'
+                            ? styles.checkin
+                            : styles.checkout
+                        }
+                      >
+                        {transaction.status}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
   );

@@ -4,6 +4,9 @@
 
 #propertyType h2 {
   margin-bottom: 25px;
+  @media screen and (max-width: 376px) {
+    text-align: center;
+  }
 }
 
 .propertyList {
@@ -11,6 +14,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 376px) {
+    flex-direction: column;
+  }
 }
 
 .propertyCard {
@@ -19,11 +25,22 @@
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
   overflow: hidden;
+  @media screen and (max-width: 376px) {
+    max-width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .propertyImg {
   width: 100%;
   height: 150px;
+  @media screen and (max-width: 376px) {
+    width: 340px;
+    height: 200px;
+  }
 }
 
 .propertyImg img {

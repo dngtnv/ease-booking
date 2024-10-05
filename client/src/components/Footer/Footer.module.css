@@ -12,6 +12,12 @@ footer {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  @media screen and (max-width: 376px) {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+  }
 }
 
 .footerBlock {

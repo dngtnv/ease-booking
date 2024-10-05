@@ -9,4 +9,7 @@
   max-width: 1280px;
   padding: 1.5rem 5rem;
   color: #212121;
+  @media screen and (max-width: 376px) {
+    padding: 1.5rem 1rem;
+  }
 }

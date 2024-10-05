@@ -11,11 +11,23 @@
   align-items: center;
   flex-direction: column;
   gap: 25px;
+  @media screen and (max-width: 376px) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .ctaMain .ctaTitle {
   font-size: 36px;
   font-weight: bold;
+}
+
+.ctaForm {
+  display: flex;
+  gap: 12px;
+  @media screen and (max-width: 376px) {
+    flex-direction: column;
+  }
 }
 
 .ctaForm input {
@@ -25,7 +37,6 @@
   border-radius: 5px;
   width: 300px;
   border: none;
-  margin-right: 12px;
   font-size: 1rem;
 }
 

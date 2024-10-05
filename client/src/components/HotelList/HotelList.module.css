@@ -4,6 +4,9 @@
 
 #hotelWrapper h2 {
   margin-bottom: 25px;
+  @media screen and (max-width: 376px) {
+    text-align: center;
+  }
 }
 
 .hotelList {

@@ -8,3 +8,24 @@
   align-items: flex-start;
   gap: 16px;
 }
+
+@media screen and (max-width: 1024px) {
+  #searchWrapper {
+    flex-direction: column;
+
+    padding: 1.5rem 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #searchWrapper {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  #searchWrapper {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+}

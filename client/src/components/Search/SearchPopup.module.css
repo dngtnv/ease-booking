@@ -4,12 +4,25 @@
   border-radius: 8px;
   font-size: 14px;
   min-width: 260px;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 }
 
 #popupWrapper .popupHeading {
   font-size: 24px;
   font-weight: bold;
   color: #5a5852;
+}
+
+.searchCombo {
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    gap: 1rem;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .searchInputs {
